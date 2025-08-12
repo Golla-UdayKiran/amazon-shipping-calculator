@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon Shipping Calculator</title>
+  </head>
+  <body>
+    <h1>Amazon</h1>
+    <p>Amazon Shipping Calculator</p>
+    <h2>Amazon.com - America</h2>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping.</p>
+    <input placeholder="Cost of order" class="js-cost-input-usd" onkeydown="
+      handleCostKeydownUSD(event);
+    ">
+    <button onclick="
+      calculateTotalUSD();
+    ">Calculate</button>
+    <p class="js-total-cost-usd"></p>
+
+    <h2>Amazon.in - India</h2>
+    <p>Orders under ₹3,505.20 = +₹876.30 shipping.</p>
+    <p>Orders over ₹3,505.20 = FREE shipping.</p>
+    <input placeholder="Cost of order" class="js-cost-input-inr" onkeydown="
+      handleCostKeydownINR(event);
+    ">
+    <button onclick="
+      calculateTotalINR();
+    ">Calculate</button>
+    <p class="js-total-cost-inr"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
