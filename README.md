@@ -1,7 +1,3 @@
-<h2>Resources</h2>
-<p>1. <a href="https://supersimple.dev/projects/dom">DOM Exercises</a></p>
-<p>2. <a href="https://supersimple.dev/projects/dom-with-css">DOM Exercises</a></p>
-
 # Amazon Shipping Calculator
 
 <p><ins>Steps</ins>
@@ -22,4 +18,7 @@ When we press a key:
 
 2. If it is, do the same thing as the calculate button</p>
 
+<h2>Resources</h2>
+<p>1. <a href="https://supersimple.dev/projects/dom">DOM Exercises</a></p>
+<p>2. <a href="https://supersimple.dev/projects/dom-with-css">DOM Exercises</a></p>
 <code>website</code>: https://golla-udaykiran.github.io/amazon-shipping-calculator
