@@ -1,4 +1,4 @@
-# Amazon Shipping Calculator
+<h2>Amazon Shipping Calculator</h2>
 
 <p><ins>Steps</ins>
 
