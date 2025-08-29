@@ -21,3 +21,8 @@ body {
   padding: 12px 15px;
   cursor: pointer;
 }
+
+/* Give the error message a red color. */
+.error-message {
+  color: red;
+}

@@ -16,6 +16,22 @@ function calculateTotalUSD() {
   // Convert the numbers to cents by * 100.
   let cost = Number(inputElement.value) * 100;
 
+  // First, reset all previous messages.
+  document.querySelector('.js-total-cost-usd')
+    .innerHTML = '';
+  document.querySelector('.js-error-message-usd')
+    .innerHTML = '';
+
+  if (cost < 0) {
+    document.querySelector('.js-error-message-usd')
+      .innerHTML = 'Error: cost cannot be less than $0';
+    // If we display an error, we can use return to
+    // end this function immediately. This is called
+    // an "early return" and it makes the code cleaner
+    // because it reduces nesting / indents.
+    return;
+  }
+
   if (cost < 4000) {
     cost = cost + 1000;
   }
@@ -41,6 +57,22 @@ function calculateTotalINR() {
 
   // Convert the numbers to paise by * 100.
   let cost = Number(inputElement.value) * 100;
+
+  // First, reset all previous messages.
+  document.querySelector('.js-total-cost-inr')
+    .innerHTML = '';
+  document.querySelector('.js-error-message-inr')
+    .innerHTML = '';
+
+  if (cost < 0) {
+    document.querySelector('.js-error-message-inr')
+      .innerHTML = 'Error: cost cannot be less than ₹0';
+    // If we display an error, we can use return to
+    // end this function immediately. This is called
+    // an "early return" and it makes the code cleaner
+    // because it reduces nesting / indents.
+    return;
+  }
 
   if (cost < 350520) {
     cost = cost + 87630;
